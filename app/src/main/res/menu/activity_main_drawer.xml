@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:menuCategory="secondary"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/scanner"
+            android:menuCategory="secondary"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            android:title="@string/scanner" />
+        <item
+            android:id="@+id/generator"
+            android:menuCategory="secondary"
+            android:icon="@drawable/ic_baseline_qr_code_2_24_generate"
+            android:title="@string/generator" />
+        <item
+            android:id="@+id/saveItems"
+            android:menuCategory="secondary"
+            android:icon="@drawable/ic_baseline_save_24"
+            android:title="Save Items" />
+
+    </group>
+
+    <item
+        android:menuCategory="secondary"
+        android:title="UpComing">
+        <menu>
+            <item
+                android:id="@+id/upComing"
+                android:icon="@drawable/ic_baseline_add_24"
+                android:title="Coming Soon" />
+
+        </menu>
+    </item>
+</menu>

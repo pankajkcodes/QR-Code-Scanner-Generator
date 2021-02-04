@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.pankajkcodes.qrcodescannergenerator.ui.home.HomeFragment"
+        android:label="QR Code Scanner &amp; Generator"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/scanner"
+        android:name="com.pankajkcodes.qrcodescannergenerator.ui.scanner.ScannerFragment"
+        android:label="@string/scanner"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/generator"
+        android:name="com.pankajkcodes.qrcodescannergenerator.ui.generator.GeneratorFragment"
+        android:label="@string/generator"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/saveItems"
+        android:name="com.pankajkcodes.qrcodescannergenerator.ui.fragment.ItemsFragments"
+        android:label="fragment_save_items"
+        tools:layout="@layout/fragment_save_items" />
+</navigation>
